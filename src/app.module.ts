@@ -2,9 +2,9 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CoreModule } from './aluno/core/core.module';
-import { ApplicationBootstrapOptions } from './aluno/common/interfaces/application-bootstrap-options.interface';
+import { ApplicationBootstrapOptions } from '../src/aluno/common/application-bootstrap-options.interface';
 import { AlunoModule } from './aluno/application/aluno.module';
-import { AlunoInfrastructureModule } from './aluno/infrastructure/aluno-infrastructure.module';
+import { AlunoInfrastructureModule } from '../src/aluno/infraestructure/aluno-infrastructure.module'
 
 @Module({
   imports: [CoreModule],
